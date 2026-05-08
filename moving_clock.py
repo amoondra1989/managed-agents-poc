@@ -7,8 +7,8 @@ try:
         now = datetime.now()
         # Clear the terminal screen
         sys.stdout.write('\033[2J\033[H')
-        # Print the current time in DD:MM:YYYY format
-        sys.stdout.write(now.strftime("%d:%m:%Y") + '\n')
+        # Print the current time in DD:MM:YYYY HH:MM:SS format
+        sys.stdout.write(now.strftime("%d:%m:%Y %H:%M:%S") + '\n')
         sys.stdout.flush()
         # Wait for one second
         time.sleep(1)
